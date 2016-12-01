@@ -35,6 +35,13 @@ a {
     &:focus {
         color: darken(@theme-primary, 10%);
     }
+    &.alt {
+        color: fade(white, 85%);
+        &:hover, 
+        &:focus {
+            color: darken(white, 10%);
+        }
+    }
 }
 
 h1,
@@ -94,6 +101,22 @@ aside {
             color: darken(@theme-primary, 10%);
         }
     }
+    &.affix-top {
+        .nav {
+            > li {
+                &.active {
+                    > a,
+                    > a:focus {
+                        color: fade(white, 90%) !important;
+                        background-color: transparent;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        } 
+    }
     .nav {
         > li {
             > a,
@@ -109,7 +132,7 @@ aside {
             &.active {
                 > a,
                 > a:focus {
-                    color: @theme-primary !important;
+                    color: fade(@theme-primary, 80%) !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -151,6 +174,17 @@ aside {
                 color: @theme-dark;
                 &:hover {
                     color: @theme-primary;
+                }
+            }
+        }
+    }
+}
+li {
+    &.dropdown {
+        &:hover {
+            ul {
+                &.dropdown-menu {
+                    display: block;
                 }
             }
         }
@@ -235,8 +269,7 @@ header {
 .portfolio-box {
     position: relative;
     display: block;
-    max-width: 650px;
-    margin: 0 auto;
+    margin: 0 auto -1px;
     .portfolio-box-caption {
         color: white;
         opacity: 0;

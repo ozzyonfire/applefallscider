@@ -39,16 +39,30 @@ function init() {
     var image = 'img/map-marker.png';
     
     var myLatLng = new google.maps.LatLng(44.109753, -77.470981);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
+    // var beachMarker = new google.maps.Marker({
+    //     position: myLatLng,
+    //     map: map,
+    //     icon: image
+    // }); 
+
+
+    var marker = new google.maps.Marker({
         map: map,
-        icon: image
-    }); 
+        icon: {
+            path: fontawesome.markers.MAP_MARKER,
+            scale: 1.5,
+            strokeWeight: 1,
+            strokeColor: 'black',
+            strokeOpacity: 1,
+            fillColor: '#9B2335',
+            fillOpacity: 0.9,
+        },
+        clickable: false,
+        position: myLatLng
+    });
 }
 
 function saveEmail() {
     var name = $("#nameInput").val();
     var email = $("#emailInput").val();
-    
-
 }
