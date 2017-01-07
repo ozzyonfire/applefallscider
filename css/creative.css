@@ -219,6 +219,9 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+.our-story {
+  background-image: url('../img/story/bluebird.jpg');
+}
 .section-heading {
   margin-top: 0;
 }
