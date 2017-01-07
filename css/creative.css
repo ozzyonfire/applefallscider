@@ -222,6 +222,12 @@ header .header-content .header-content-inner p {
 .our-story {
   background-image: url('../img/story/bluebird.jpg');
 }
+.our-orchard {
+  background-image: url('../img/orchard/orchard.jpg');
+}
+.our-cider {
+  background-image: url('../img/cider/cider.jpg');
+}
 .section-heading {
   margin-top: 0;
 }
