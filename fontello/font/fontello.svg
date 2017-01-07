@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
 <defs>
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -13,6 +13,8 @@
 <glyph glyph-name="location-1" unicode="&#xe802;" d="M429 493q0 59-42 101t-101 42-101-42-42-101 42-101 101-42 101 42 42 101z m142 0q0-61-18-100l-203-432q-9-18-27-29t-37-11-38 11-26 29l-204 432q-18 39-18 100 0 118 84 202t202 84 202-84 83-202z" horiz-adv-x="571.4" />
 
 <glyph glyph-name="leaf" unicode="&#xe803;" d="M885 402q0-180-109-322t-281-188l0-64q0-21-16-36t-36-15-37 15-16 36l0 64q-172 46-281 188t-109 322q0 191 123 338t311 182l9 1 10-1q188-35 310-182t122-338z m-390-401q128 43 207 153t79 248q0 151-95 268t-243 147q-148-30-244-147t-95-268q0-136 80-247t207-154l0 156-227 226q-11 11-6 25t18 18 25-7l190-190 0 188-123 122q-12 12-7 25t18 18 26-6l85-85 0 171q0 21 16 37t37 15 36-15 16-37l0-171 85 85q11 11 26 6t18-18-6-25l-123-122 0-188 190 190q18 18 36 0t0-36l-226-226 0-156z" horiz-adv-x="885" />
+
+<glyph glyph-name="flight" unicode="&#xe804;" d="M268-120l124 400-180 0-112-100-100 0 80 170-80 170 100 0 112-100 180 0-124 400 100 0 224-400 274 0t36-4 46-11 36-21 16-34q0-32-38-49t-74-19l-38-2-258 0-224-400-100 0z" horiz-adv-x="1000" />
 
 <glyph glyph-name="child" unicode="&#xf1ae;" d="M663 544l-163-163v-460q0-25-18-44t-44-18-45 18-18 44v215h-36v-215q0-25-18-44t-44-18-44 18-19 44v460l-163 163q-15 16-15 38t15 38q17 16 39 16t37-16l128-127h205l127 127q16 16 38 16t38-16q16-16 16-38t-16-38z m-181 92q0-52-36-89t-89-36-88 36-37 89 37 88 88 37 89-37 36-88z" horiz-adv-x="714.3" />
 

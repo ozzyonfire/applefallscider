@@ -41,6 +41,12 @@
       "css": "child",
       "code": 61870,
       "src": "fontawesome"
+    },
+    {
+      "uid": "6e8aea8fff9525dfc5149f0c03669091",
+      "css": "flight",
+      "code": 59396,
+      "src": "entypo"
     }
   ]
 }
