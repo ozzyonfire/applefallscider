@@ -36,6 +36,18 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-90029009-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
 </head>
 
 <body id="page-top">
@@ -68,13 +80,13 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#subscribe">Subscribe</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#map-canvas">Map</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#page-top">Contact</a>
+                        <a class="page-scroll" href="#subscribe">Subscribe</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact-us">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -83,41 +95,9 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <section class="bg-dark" id="page-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <hr class="light">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-3x fa-envelope-o wow bounceIn" data-wow-delay="0s"></i>
-                        <h3>Email</h3>
-                        <a href="mailto:info@applefallscider.ca" class="alt">info@applefallscider.ca</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-3x fa-address-card-o wow bounceIn" data-wow-delay="0s"></i>
-                        <h3>Address</h3>
-                        <a href="https://goo.gl/maps/XWosM94nhnp" target="_blank" class="alt">1633 County Rd. #3<br>Carrying Place, Ontario<br>K0K 1L0</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-3x fa-phone wow bounceIn" data-wow-delay="0s"></i>
-                        <h3>Phone</h3>
-                        <a href="tel:+1-613-242-8433" class="alt">(613) 242-8433</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="contact-us"></div>
+
+    <div class="map" id="map-canvas"></div>
 
     <aside id="subscribe">
         <div class="container text-center">
@@ -149,11 +129,12 @@
             </div>
         </div>
     </aside>
-
-    <div class="map" id="map-canvas"></div>
     
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <!-- Template loaders -->
+    <script src="js/loaders.js"></script>
 
     <!-- Google Maps -->
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyCTb1Zs3QMLRdxqKniBIl3JyBS9bUzetEA"></script>
