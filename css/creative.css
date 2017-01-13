@@ -64,6 +64,13 @@ p {
 section {
   padding: 100px 0;
 }
+.section-small {
+  padding-bottom: 80px;
+  padding-top: 100px;
+}
+.bottom-pad {
+  padding-bottom: 20px;
+}
 aside {
   padding: 50px 0;
 }
