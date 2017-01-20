@@ -18,37 +18,51 @@ var createContacts = function (contactElement, footer) {
 
   var section = footer ? $('<aside>').addClass('bg-dark') : $('<section>').addClass('bg-primary');
   var container = $('<div class="container"></div>');
-  var row = $('<div class="row text-center"></div>');
+  var row_lg = $('<div class="row visible-lg visible-md hidden-sm hidden-xs text-center"></div>');
+  var row_sm_1 = $('<div class="row hidden-lg hidden-md visible-sm visible-xs text-center"></div>');
+  var row_sm_2 = $('<div class="row hidden-lg hidden-md visible-sm visible-xs text-center"></div>');
 
   // email
   var aEmail = $('<a/>');
   aEmail.attr('href', "mailto:info@applefallscider.ca");
   aEmail.addClass('alt');
   aEmail.html('info@applefallscider.ca');
-  row.append(createContactIcon('fa-envelope-o', 'Email', "mailto:info@applefallscider.ca", footer, aEmail));
+  var contact_icon = createContactIcon('fa-envelope-o', 'Email', "mailto:info@applefallscider.ca", footer, aEmail);
+  row_lg.append(contact_icon);
+  row_sm_1.append(contact_icon.clone());
 
   // address
   var aAddress = $('<a/>').attr('href', 'https://goo.gl/maps/XWosM94nhnp');
   aAddress.attr('target', '_blank');
   aAddress.addClass('alt');
   aAddress.html('1633 County Rd. #3<br>Carrying Place, Ontario<br>K0K 1L0');
-  row.append(createContactIcon('fa-address-card-o', 'Address', 'https://goo.gl/maps/XWosM94nhnp', footer, aAddress));
+  contact_icon = createContactIcon('fa-address-card-o', 'Address', 'https://goo.gl/maps/XWosM94nhnp', footer, aAddress);
+  row_lg.append(contact_icon);
+  row_sm_1.append(contact_icon.clone());
 
   // phone
   var aPhone = $('<a/>');
   aPhone.attr('href', 'tel:+1-613-242-8433');
   aPhone.addClass('alt');
   aPhone.html('(613) 242-8433');
-  row.append(createContactIcon('fa-phone', 'Phone', 'tel:+1-613-242-8433', footer, aPhone));
+  contact_icon = createContactIcon('fa-phone', 'Phone', 'tel:+1-613-242-8433', footer, aPhone);
+  row_lg.append(contact_icon);
+  row_sm_1.append(contact_icon.clone());
 
   // facebook
-  row.append(createContactIcon('fa-facebook', 'Facebook', 'https://www.facebook.com/applefallscider', footer));
+  contact_icon = createContactIcon('fa-facebook', 'Facebook', 'https://www.facebook.com/applefallscider', footer);
+  row_lg.append(contact_icon);
+  row_sm_2.append(contact_icon.clone());
 
   // twitter
-  row.append(createContactIcon('fa-twitter', 'Twitter', 'https://twitter.com/AppleFallsCider', footer));
+  contact_icon = createContactIcon('fa-twitter', 'Twitter', 'https://twitter.com/AppleFallsCider', footer);
+  row_lg.append(contact_icon);
+  row_sm_2.append(contact_icon.clone());
 
   // instagram
-  row.append(createContactIcon('fa-instagram', 'Instagram', 'https://www.instagram.com/applefallscider/', footer));
+  contact_icon = createContactIcon('fa-instagram', 'Instagram', 'https://www.instagram.com/applefallscider/', footer);
+  row_lg.append(contact_icon);
+  row_sm_2.append(contact_icon.clone());
 
   if (!footer) {
     // create the title
@@ -61,13 +75,15 @@ var createContacts = function (contactElement, footer) {
     container.append(titleRow);
   }
 
-  container.append(row);
+  container.append(row_lg);
+  container.append(row_sm_1);
+  container.append(row_sm_2);
   section.append(container);
   contactElement.append(section);
 };
 
 var createContactIcon = function(iconName, name, link, footer, a) {
-  var section = $('<div class="col-lg-2 col-md-2 col-sm-6"></div>');
+  var section = $('<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4"></div>');
   var serviceBox = $('<div/>').addClass('service-box');
 
   var aLink = $('<a/>');

@@ -97,7 +97,7 @@ aside {
 }
 .navbar-default.affix-top .nav > li.active > a,
 .navbar-default.affix-top .nav > li.active > a:focus {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: #00b300;
   background-color: transparent;
 }
 .navbar-default.affix-top .nav > li.active > a:hover,
@@ -117,7 +117,7 @@ aside {
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: rgba(185, 6, 0, 0.8) !important;
+  color: rgba(185, 6, 0, 0.9);
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -201,6 +201,9 @@ header .header-content .header-content-inner p {
   color: #ffffff;
   font-size: 16px;
   margin-bottom: 50px;
+}
+header .header-content .header-content-inner .logo {
+  max-height: 80%;
 }
 @media (min-width: 768px) {
   header {
