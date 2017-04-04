@@ -93,6 +93,56 @@ aside {
     padding: 0;
 }
 
+// col-5ths
+
+.col-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+   position: relative;
+   min-height: 1px;
+   padding-right: 10px;
+   padding-left: 10px; 
+}
+
+.col-5ths {
+   -webkit-box-flex: 0;
+   -webkit-flex: 0 0 20%;
+   -ms-flex: 0 0 20%;
+   flex: 0 0 20%;
+   max-width: 20%;
+}
+
+@media (min-width: 576px) {
+  .col-sm-5ths {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+   } 
+}
+
+@media (min-width: 768px) {
+  .col-md-5ths {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+   } 
+}
+
+@media (min-width: 992px) {
+  .col-lg-5ths {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+   } 
+}
+
 // Navigation
 
 .navbar-default {
@@ -213,6 +263,7 @@ header {
     color: white;
     .header-content {
         position: relative;
+        max-height: 100%;
         text-align: center;
         padding: 100px 15px 100px;
         width: 100%;
@@ -230,8 +281,9 @@ header {
                 font-weight: 300;
                 color: fade(white, 100%);
                 font-size: 16px;
-                margin-bottom: 50px;
+                margin-bottom: 25px;
             }
+            max-height: 100%;
         }
     }
     @media (min-width: 768px) {
