@@ -282,6 +282,18 @@ header .header-content .header-content-inner p {
 .our-cider {
   background-image: url('../img/cider/cider.jpg');
 }
+video#af-vid {
+  position: absolute;
+  top: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
 .section-heading {
   margin-top: 0;
 }
