@@ -221,8 +221,10 @@ header {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/vids/applefalls.png');
+  z-index: -2;
   text-align: center;
   color: white;
+  overflow: hidden;
 }
 header .header-content {
   position: relative;
@@ -293,6 +295,7 @@ video#af-vid {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
 }
 .section-heading {
   margin-top: 0;
